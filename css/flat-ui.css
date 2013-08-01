@@ -16,77 +16,7 @@
   text-transform: none;
   -webkit-font-smoothing: antialiased;
 }
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="fui-"] {
-*/
-.fui-arrow-right,
-.fui-arrow-left,
-.fui-cmd,
-.fui-check-inverted,
-.fui-heart,
-.fui-location,
-.fui-plus,
-.fui-check,
-.fui-cross,
-.fui-list,
-.fui-new,
-.fui-video,
-.fui-photo,
-.fui-volume,
-.fui-time,
-.fui-eye,
-.fui-chat,
-.fui-search,
-.fui-user,
-.fui-mail,
-.fui-lock,
-.fui-gear,
-.fui-radio-unchecked,
-.fui-radio-checked,
-.fui-checkbox-unchecked,
-.fui-checkbox-checked,
-.fui-calendar-solid,
-.fui-pause,
-.fui-play,
-.fui-check-inverted-2 {
-  display: inline-block;
-  font-family: 'Flat-UI-Icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-}
-.fui-arrow-right:before {
-  content: "\e02c";
-}
-.fui-arrow-left:before {
-  content: "\e02d";
-}
-.fui-cmd:before {
-  content: "\e02f";
-}
-.fui-check-inv
-.inline-block {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-.clearfix:after {
-  clear: both;
-}
+
 .drop-ie-gradient {
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
 }
@@ -123,43 +53,282 @@ you can use the generic selector below, but it's slower:
   padding-top: 5px;
 }
 
+.closeButton {
+  padding-top: 5px;
+  width: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Standard Screen size for labels */
 @media only screen and (min-width : 1200px){
-.list-row {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-}
+  .list-row {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 
+  .documentWidth {
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .programmingLanguage {
+    background-color: #1abc9c;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .projects {
+    background-color: #f1c40f;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+
+  }
+
+  .relatedCoursework {
+    background-color: #e74c3c;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .experience {
+    background-color: #2ecc71;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .resume {
+    background-color: #F39C12;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .aboutMe {
+    background-color: #3498db;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .music {
+    background-color: #9B59B6;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .externalLinks {
+    background-color: #7F8C8D;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+}
+/* Tablets */
 @media only screen and (min-width : 569px) and (max-width: 1199px) {
   .list-row {
-  width: 560px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-}
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 
+  .documentWidth {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .programmingLanguage {
+    background-color: #1abc9c;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .projects {
+    background-color: #f1c40f;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+
+  }
+
+  .relatedCoursework {
+    background-color: #e74c3c;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .experience {
+    background-color: #2ecc71;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .resume {
+    background-color: #F39C12;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .aboutMe {
+    background-color: #3498db;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .music {
+    background-color: #9B59B6;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .externalLinks {
+    background-color: #7F8C8D;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+}
+/* Cell Phones */
 @media only screen and (max-width: 568px) {
   .list-row {
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .documentWidth {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .programmingLanguage {
+    background-color: #1abc9c;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .projects {
+    background-color: #f1c40f;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+
+  }
+
+  .relatedCoursework {
+    background-color: #e74c3c;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .experience {
+    background-color: #2ecc71;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .resume {
+    background-color: #F39C12;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .aboutMe {
+    background-color: #3498db;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .music {
+    background-color: #9B59B6;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
+
+  .externalLinks {
+    background-color: #7F8C8D;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    border-radius: 5px;
+  }
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
-  .logo {
-    background-image: url(../images/demo/cslogo-2x.png);
-  }
-  .demo-browser {
-    background-image: url(../images/demo/browser-2x.png);
-  }
-}
+
 body {
   color: #ffffff;
   background-color: #2C3E50;
@@ -168,59 +337,8 @@ body {
   line-height: 1.231;
 }
 .topPart {
-background-color: #2C3E50;
+  background-color: #2C3E50;
 }
-
-.programmingLanguage {
-background-color: #1abc9c;
-text-align:center;
-display:none;
-
-}
-
-.projects {
-background-color: #f1c40f;
-text-align:center;
-display:none;
-
-}
-
-.relatedCoursework {
-background-color: #e74c3c;
-text-align:center;
-display:none;
-}
-
-.experience {
-background-color: #2ecc71;
-text-align:center;
-display:none;
-}
-
-.resume {
-background-color: #F39C12;
-text-align:center;
-display:none;
-}
-
-.aboutMe {
-background-color: #3498db;
-text-align:center;
-display:none;
-}
-
-.music {
-background-color: #9B59B6;
-text-align:center;
-display:none;
-}
-
-.externalLinks {
-background-color: #7F8C8D;
-text-align:center;
-display:none;
-}
-
 
 input,
 button,
@@ -255,12 +373,13 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 4px;
-  margin-top: 2px;
+  text-align: center;
 }
 h4 {
   font-size: 18px;
   font-weight: 500;
   margin-top: 4px;
+  margin-bottom: 4px;
 }
 h5 {
   font-size: 16px;
@@ -466,76 +585,4 @@ h6 {
 .btn-group.open .btn.btn-inverse.dropdown-toggle,
 .btn.btn-inverse.active {
   background-color: #2c3e50;
-}
-.btn > [class^="fui-"] {
-  margin: 0 4px;
-  position: relative;
-  top: 1px;
-  vertical-align: top;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-.btn > [class^="fui-"].pull-right {
-  margin-right: 0px;
-}
-.btn-toolbar .btn.active {
-  color: #ffffff;
-}
-.btn-toolbar .btn:first-child {
-  -webkit-border-radius: 6px 0 0 6px;
-  -moz-border-radius: 6px 0 0 6px;
-  border-radius: 6px 0 0 6px;
-}
-.btn-toolbar .btn:last-child {
-  -webkit-border-radius: 0 6px 6px 0;
-  -moz-border-radius: 0 6px 6px 0;
-  border-radius: 0 6px 6px 0;
-}
-.btn-toolbar .btn > [class^="fui-"] {
-  font-size: 16px;
-  top: 0;
-}
-.btn-tip {
-  font-weight: 300;
-  padding-left: 10px;
-}
-.btn-group > .btn {
-  border-radius: 0;
-  text-align: center;
-}
-.btn-group > .btn:active + .btn,
-.btn-group > .btn.active + .btn {
-  border-left-color: transparent;
-}
-.btn-group > .btn:first-of-type {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-.btn-group > .btn:last-of-type {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-.btn-group > .btn + .btn {
-  margin-left: 0;
-}
-.btn-group > .btn + .dropdown-toggle {
-  border-left: 2px solid rgba(52, 73, 94, 0.15);
-  padding-left: 13px;
-  padding-right: 13px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.btn-group > .btn + .dropdown-toggle .caret {
-  margin-left: 3px;
-  margin-right: 3px;
-}
-.btn-group > .btn.btn-huge + .dropdown-toggle .caret {
-  margin-left: 7px;
-  margin-right: 7px;
-}
-.btn-group > .btn.btn-small + .dropdown-toggle .caret {
-  margin-left: 0;
-  margin-right: 0;
 }
