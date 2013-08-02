@@ -58,145 +58,236 @@
             </div>
 
             <div class="span3" style="min-width: 250px">
-              <a onclick="$('.music').slideDown(); $('.programmingLanguage, .projects, .experience, .relatedCoursework, .resume, .aboutMe, .externalLinks').slideUp(); $('html, body').animate({scrollTop: $('.music').offset().top }, 600);"  class="btn btn-block btn-block btn-mus">music</a>
+              <a onclick="$('.music').slideDown(); $('.programmingLanguage, .projects, .experience, .relatedCoursework, .resume, .aboutMe, .externalLinks').slideUp(); $('html, body').animate({scrollTop: $('.music').offset().top }, 600);"  class="btn btn-large btn-block btn-mus">music</a>
             </div>
 
             <div class="span3" style="min-width: 250px">
-              <a onclick="$('.externalLinks').slideDown(); $('.programmingLanguage, .projects, .experience, .relatedCoursework, .resume, .aboutMe, .music').slideUp(); $('html, body').animate({scrollTop: $('.externalLinks').offset().top }, 600);"  class="btn btn-block btn-block btn-ext">external links</a>
+              <a onclick="$('.externalLinks').slideDown(); $('.programmingLanguage, .projects, .experience, .relatedCoursework, .resume, .aboutMe, .music').slideUp(); $('html, body').animate({scrollTop: $('.externalLinks').offset().top }, 600);"  class="btn btn-large btn-block btn-ext">external links</a>
             </div>
           </div> <!-- /row -->
         </div>
-      </div>
-      <div class="programmingLanguage">
-        <div class="closeButton">
-          <img onclick="$('.programmingLanguage').slideUp(); $('html, body').animate({scrollTop: $('.programmingLanguage').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+        <div class="programmingLanguage">
+          <div class="closeButton">
+            <img onclick="$('.programmingLanguage').slideUp(); $('html, body').animate({scrollTop: $('.programmingLanguage').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+          </div>
+          <h3>programming languages</h3>
+          <h4>
+            <ul>
+              <li>python</li>
+              <li>javascript/coffeescript</li>
+              <li>php</li>
+              <li>ruby</li>
+              <li>java</li>
+              <li>c</li>
+              <li>c++</li>
+              <li>matlab</li>
+              <li>shell script</li>
+              <li>sparc assembly</li>
+              <li>ocaml</li>
+              <li>scala</li>
+              <li>go</li>
+            </ul>
+          </h4>
+          <h3>web frameworks</h3>
+          <h4>
+            <ul>
+              <li>symfony</li>
+              <li>node.js</li>
+              <li>requirejs</li>
+              <li>express</li>
+              <li>jquery</li>
+              <li>flask</li>
+              <li>django</li>
+              <li>zend framework</li>
+              <li>sinatra</li>
+              <li>ruby on rails</li>
+            </ul>
+          </h4>
+          <h3>sql</h3>
+          <h4>
+            <ul>
+              <li>mysql</li>
+              <li>oracle database 11g</li>
+              <li>postgresql</li>
+              <li>couchdb</li>
+            </ui>
+          </h4>
+          <h3>devops/other</h3>
+          <h4>
+            <ul>
+              <li>confluence</li>
+              <li>jira</li>
+              <li>stash</li>
+              <li>solr</li>
+              <li>intermapper</li>
+              <li>cacti</li>
+              <li>orion npm</li>
+              <li>autoesl</li>
+            </ul>
+          </div>
+          <div class="projects">
+            <div class="closeButton">
+             <img onclick="$('.projects').slideUp(); $('html, body').animate({scrollTop: $('.projects').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+           </div>
+           <h3>projects</h3>
+           <ul>
+            <li>
+              <h4>humanitarian engineering project - we have we need - january 2013 to present</h4>
+              <h5>project class focused on creating an inventory-sharing system that allows improved coordination between non-governmental organizations operating in disaster areas. we have we need is a web application written in python in which it allows users to manage their inventory and communicate with others on receiving and giving necessities during a crisis. 
+                <br>
+                <a href="http://www.wehave-weneed.org">http://www.wehave-weneed.org</a>
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>irc chat server - independent study: concurrent programming with go - april 2013 to june 2013</h4>
+              <h5>independent study class focused on learning golang, a concurrent programming language. this project partially implements the rfc-1459 standards of an irc server, in which clients can connect to it and chat. this project focused mainly on concurrency and managing goroutines.
+                <br>
+                <a href="./assets/CSE199.pdf">Summary Slide</a>
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>reduced-c compiler - compiler construction : cse 131 - april 2013 to june 2013</h4>
+              <h5>project class in which we built parser that does syntactic and symantic analysis on reduced-c code. then we built a code generator that translates correctly inputted code to sparc assembly. reduced-c is light version of c++ and includes almost every feature supported, including classes, pointers, structs and arrays. 
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>gradesource uploader - december 2012 to march 2013</h4>
+              <h5>self-motivated project in which i help the cse department create tools for easier access of a grading system. currently working on a python backend of easing uploads to gradesource, an online course management system. Written as a way to simplify uploading grades, as it allows users to grab names, emails, pid into csv forms and allow csv uploads for grades. in addition, wrote a ruby/sinatra based gui webapp as a wrapper for this backend.
+                <br>
+                <a href="https://github.com/chushao/Gradesource-Uploader">github repo</a>
+                <br>
+                <a href="https://github.com/chushao/Gradesource-Uploader---GUI">github repo for gui wrapper</a>
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>research project - integrating fpga with intel atom project - january 2013 to march 2013</h4>
+              <h5>research project focused on integrating fpga as a coprocessor with an intel atom cpu. currently the fpga and atom cpu are connected via pci-express and i researched and attempted to implement a framework to accelerate applications. unfortuantely, due to lack of documentation, i was unable to build a stable framework.
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>crossfit workout project - ruby - april 2012 to june 2012</h4>
+              <h5>project class focused on building a web application that utilizes agile development in thought process and creation. we utilized ruby on rails web framework and provided an application that allows crossfit users to keep track of their workout statistics. 
+                <br>
+                <a href="https://github.com/chushao/HERP-urban-crossfitters">github repo</a>
+              </h5>
+            </li>
+            <br>
+            <li>
+              <h4>embedded system project - autoesl - january 2012 to march 2012</h4>
+              <h5>project class focused on building an embedded computing system. our project was to build a better traffic analyzer utilizing video and sensor input on a xilinx spartan 6 fpga. our goal was to achieve real time motion tracking using edge detection.
+              </h5>
+            </li>
+          </ul>
+          <br>
         </div>
-        <h3>programming languages</h3>
-        <h4>
-          <ul>
-            <li>python</li>
-            <li>javascript/coffeescript</li>
-            <li>php</li>
-            <li>ruby</li>
-            <li>java</li>
-            <li>c</li>
-            <li>c++</li>
-            <li>matlab</li>
-            <li>shell script</li>
-            <li>sparc assembly</li>
-            <li>ocaml</li>
-            <li>scala</li>
-            <li>go</li>
+        <div class="relatedCoursework">
+         <div class="closeButton">
+           <img onclick="$('.relatedCoursework').slideUp(); $('html, body').animate({scrollTop: $('.relatedCoursework').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+         </div>
+         <h3>related coursework</h3>
+         <h4>
+           <ul>
+            <li>fluency in information technology</li>
+            <li>introduction to programming with matlab</li>
+            <li>introduction to computer science and object-oriented programming: java</li>
+            <li>basic data structures and object-oriented design</li>
+            <li>discrete mathematics</li>
+            <li>computer organization and systems programming</li>
+            <li>advanced data structures</li>
+            <li>design and analysis of algorithms</li>
+            <li>probability and statistics</li>
+            <li>theory of computability</li>
+            <li>software engineering</li>
+            <li>principles of computer operating systems</li>
+            <li>programming languages: principles and paradigms</li>
+            <li>compiler construction</li>
+            <li>global ties: team engineering</li>
+            <li>embedded system design project</li>
+            <li>independent study: concurrent programming with go </li>
           </ul>
+          <br>
         </h4>
-        <h3>web frameworks</h3>
-        <h4>
-          <ul>
-            <li>symfony</li>
-            <li>node.js</li>
-            <li>requirejs</li>
-            <li>express</li>
-            <li>jquery</li>
-            <li>flask</li>
-            <li>django</li>
-            <li>zend framework</li>
-            <li>sinatra</li>
-            <li>ruby on rails</li>
-          </ul>
-        </h4>
-        <h3>sql</h3>
-        <h4>
-          <ul>
-            <li>mysql</li>
-            <li>oracle database 11g</li>
-            <li>postgresql</li>
-            <li>couchdb</li>
-          </ui>
-        </h4>
-        <h3>devops/other</h3>
-        <h4>
-          <ul>
-            <li>confluence</li>
-            <li>jira</li>
-            <li>stash</li>
-            <li>solr</li>
-            <li>intermapper</li>
-            <li>cacti</li>
-            <li>orion npm</li>
-            <li>autoesl</li>
-          </ul>
-
-
-
       </div>
-      <div class="projects">
-        <div class="closeButton">
-         <img onclick="$('.projects').slideUp(); $('html, body').animate({scrollTop: $('.projects').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
-       </div>
-       <br>
-       moo
-     </div>
-     <div class="relatedCoursework">
-       <div class="closeButton">
-         <img onclick="$('.relatedCoursework').slideUp(); $('html, body').animate({scrollTop: $('.relatedCoursework').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
-       </div>
-       <h3>related coursework</h3>
-       <h4>
-       <ul>
-        <li>fluency in information technology</li>
-        <li>introduction to programming with matlab</li>
-        <li>introduction to computer science and object-oriented programming: java</li>
-        <li>basic data structures and object-oriented design</li>
-        <li>discrete mathematics</li>
-        <li>computer organization and systems programming</li>
-        <li>advanced data structures</li>
-        <li>design and analysis of algorithms</li>
-        <li>probability and statistics</li>
-        <li>theory of computability</li>
-        <li>software engineering</li>
-        <li>principles of computer operating systems</li>
-        <li>programming languages: principles and paradigms</li>
-        <li>compiler construction</li>
-        <li>global ties: team engineering</li>
-        <li>embedded system design project</li>
-        <li>independent study: concurrent programming with go </li>
-      </ul>
-    </h4>
-     </div>
-     <div class="experience">
+      <div class="experience">
        <div class="closeButton">
         <img onclick="$('.experience').slideUp(); $('html, body').animate({scrollTop: $('.experience').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
       </div>
-      <br>
-      moo
+      <h3>experience</h3>
+      <ul>
+        <li>
+          <h4>ucsd - cse 8b tutor - april 2013 to june 2013</h4>
+          <h5>tutored for cse 8b: introduction to java programming class. worked with students on providing help and comprehension on their programming assignments and graded problem solving assignments.
+          </h5>
+        </li>
+        <br>
+        <li>
+          <h4>ucsd - cse 3 head tutor - january 2013 to march 2013</h4>
+          <h5>head tutor for cse 3: fluency in information technology. worked with the professor in creating homework, grading labs, and lead other tutors in providing a comprehension of technology to non-technical students.
+          </h5>
+        </li>
+        <br>
+        <li>
+          <h4>bluehornet/digital river - software engineer intern - june 2012 to september 2012</h4>
+          <h5>worked on adding a custom field for users to input through the bluehornet mail service application. this intenrship provided an opportunity to go through one development cycle and implement a custom number field that will be used to send personalized data to millions of subscribers. this project mainly utilized zend framework and in house php libaries.
+          </h5>
+        </li>
+        <br>
+        <li>
+          <h4>ocean observatories initiative - systems and network support - june 2011 to present</h4>
+          <h5>manage 5 different network-monitoring tools, modify and create bash scripts, and do various miscellaneous troubleshooting jobs such as setting up servers, installing virtual machines, write shell scripts, design visio charts, and technical support for staff members.
+          </h5>
+        </li>
+        <br>
+        <li>
+          <h4>ucsd - cse 3 tutor/teacher's assistant - january 2012 to march 2012</h4>
+          <h5>tutored, graded quizzes and projects, provided feedback for students, and answered student questions for cse 3: fluency in information technology.
+          </h5>
+        </li>
+      </ul>  
+      <br>    
     </div>
     <div class="resume">
       <div class="closeButton">
-        <img onclick="$('.resume').slideUp(); $('html, body').animate({scrollTop: $('.resume').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+        <img onclick="$('.resume').slideUp(); $('html, body').animate({scrollTop: $('.resume').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />     
       </div>
-      <br>
-      moo
-    </div>
-    <div class="aboutMe">
-      <div class="closeButton">
-        <img onclick="$('.aboutMe').slideUp(); $('html, body').animate({scrollTop: $('.aboutMe').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+      <div class="embeddedResume">
+        <embed width="100%" height="100%" name="plugin" src="assets/Chu_Shao_Resume.pdf" type="application/pdf">
+        </div>
+        <div class="embeddedResumeAlt">
+          <h4>unfortunately your device doesn't allow this to be viewed embedded. please download below</h4>
+        </div>
+        <div class="downloadResumeArea">
+          <br>
+          <h4><a class="btn btn btn-rc" href="assets/Chu_Shao_Resume.pdf">download here</a></h4>
+          <br>
+        </div>
       </div>
-      <br>
-      moo
-    </div>
-    <div class="music">
-      <div class="closeButton">
-        <img onclick="$('.music').slideUp(); $('html, body').animate({scrollTop: $('.music').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+      <div class="aboutMe">
+        <div class="closeButton">
+          <img onclick="$('.aboutMe').slideUp(); $('html, body').animate({scrollTop: $('.aboutMe').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+        </div>
+        <br>
+        moo
       </div>
-      <br>
-      moo
-    </div>
-    <div class="externalLinks">
-      <div class="closeButton">
-        <img onclick="$('.externalLinks').slideUp(); $('html, body').animate({scrollTop: $('.externalLinks').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+      <div class="music">
+        <div class="closeButton">
+          <img onclick="$('.music').slideUp(); $('html, body').animate({scrollTop: $('.music').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+        </div>
+        <br>
+        moo
       </div>
-      <br>
-      moo
+      <div class="externalLinks">
+        <div class="closeButton">
+          <img onclick="$('.externalLinks').slideUp(); $('html, body').animate({scrollTop: $('.externalLinks').offset().top }, 600);" src="./images/upArrow.png" width=48 height=48 />
+        </div>
+        <br>
+        moo
+      </div>
     </div>
 
 
@@ -215,6 +306,7 @@
     <script src="js/jquery.stacktable.js"></script>
     <script src="http://vjs.zencdn.net/c/video.js"></script>
     <script src="js/application.js"></script>
+
 
   </body>
   </html>

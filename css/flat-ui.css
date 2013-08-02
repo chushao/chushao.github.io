@@ -60,6 +60,10 @@
   margin-right: auto;
 }
 
+.downloadResumeArea {
+  text-align: center;
+}
+
 /* Standard Screen size for labels */
 @media only screen and (min-width : 1200px){
   .list-row {
@@ -84,7 +88,7 @@
     border-radius: 5px;
   }
 
-  .projects {
+  .music {
     background-color: #f1c40f;
     width: 1060px;
     margin-left: auto;
@@ -121,6 +125,16 @@
     border-radius: 5px;
   }
 
+  .embeddedResume {
+    width:826px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1070px;
+  }
+  .embeddedResumeAlt {
+    display:none;
+  }
+
   .aboutMe {
     background-color: #3498db;
     width: 1060px;
@@ -130,7 +144,7 @@
     border-radius: 5px;
   }
 
-  .music {
+  .projects {
     background-color: #9B59B6;
     width: 1060px;
     margin-left: auto;
@@ -173,7 +187,7 @@
     border-radius: 5px;
   }
 
-  .projects {
+  .music {
     background-color: #f1c40f;
     width: 520px;
     margin-left: auto;
@@ -209,6 +223,15 @@
     display:none;
     border-radius: 5px;
   }
+  .embeddedResume {
+    display:none;
+  }
+  .embeddedResumeAlt {
+    text-align: center;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .aboutMe {
     background-color: #3498db;
@@ -219,7 +242,7 @@
     border-radius: 5px;
   }
 
-  .music {
+  .projects {
     background-color: #9B59B6;
     width: 520px;
     margin-left: auto;
@@ -255,16 +278,14 @@
 
   .programmingLanguage {
     background-color: #1abc9c;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
     border-radius: 5px;
   }
 
-  .projects {
+  .music {
     background-color: #f1c40f;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
@@ -274,7 +295,6 @@
 
   .relatedCoursework {
     background-color: #e74c3c;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
@@ -283,7 +303,6 @@
 
   .experience {
     background-color: #2ecc71;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
@@ -292,25 +311,33 @@
 
   .resume {
     background-color: #F39C12;
-    width: 250px;
+
     margin-left: auto;
     margin-right: auto;
     display:none;
     border-radius: 5px;
+  }
+
+  .embeddedResume {
+    display:none;
+  }
+  .embeddedResumeAlt {
+    text-align: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .aboutMe {
     background-color: #3498db;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
     border-radius: 5px;
   }
 
-  .music {
+  .projects {
     background-color: #9B59B6;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
@@ -319,7 +346,6 @@
 
   .externalLinks {
     background-color: #7F8C8D;
-    width: 250px;
     margin-left: auto;
     margin-right: auto;
     display:none;
@@ -384,7 +410,8 @@ h4 {
 h5 {
   font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 h6 {
   font-size: 13px;
@@ -506,17 +533,17 @@ h6 {
   background-color: #2c81ba;
 }
 
-.btn.btn-mus {
+.btn.btn-projects {
   background-color: #9B59B6;
 }
-.btn.btn-mus:hover,
-.btn.btn-mus:focus,
-.btn-group:focus .btn.btn-mus.dropdown-toggle {
+.btn.btn-projects:hover,
+.btn.btn-projects:focus,
+.btn-group:focus .btn.btn-projects.dropdown-toggle {
   background-color: #8E44AD;
 }
-.btn.btn-mus:active,
-.btn-group.open .btn.btn-mus.dropdown-toggle,
-.btn.btn-mus.active {
+.btn.btn-projects:active,
+.btn-group.open .btn.btn-projects.dropdown-toggle,
+.btn.btn-projects.active {
   background-color: #855FA8;
 }
 
@@ -560,17 +587,17 @@ h6 {
 .btn.btn-success.active {
   background-color: #27ad60;
 }
-.btn.btn-projects {
+.btn.btn-mus {
   background-color: #f1c40f;
 }
-.btn.btn-projects:hover,
-.btn.btn-projects:focus,
-.btn-group:focus .btn.btn-projects.dropdown-toggle {
+.btn.btn-mus:hover,
+.btn.btn-musfocus,
+.btn-group:focus .btn.btn-mus.dropdown-toggle {
   background-color: #f5d313;
 }
-.btn.btn-projects:active,
-.btn-group.open .btn.btn-projects.dropdown-toggle,
-.btn.btn-projects.active {
+.btn.btn-mus:active,
+.btn-group.open .btn.btn-mus.dropdown-toggle,
+.btn.btn-mus.active {
   background-color: #cda70d;
 }
 .btn.btn-inverse {
