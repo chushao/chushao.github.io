@@ -3,474 +3,234 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<meta name="description" content="Chu Shao - Software Engineer">
 	<meta name="author" content="">
 	<link rel="shortcut icon" href="ico/favicon.png">
 
 	<title>Chu Shao</title>
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-	<!-- Custom styles for this template -->
-	<link href="css/main.css" rel="stylesheet">
+	<!-- Custom styles -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
 
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Menu -->
+	<nav class="nav">
+		<div class="nav-content">
+			<div class="nav-logo">
+				<a href="#home">CS</a>
+			</div>
+			<div class="nav-links">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#education">Education</a>
+				<a href="#publications">Publications</a>
+				<a href="#contact">Contact</a>
+				
+			</div>
+			<a href="assets/Chu_Shao_Resume.pdf" class="button">Download Resume</a>
+			<button class="nav-toggle" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</nav>
 
-	<script src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script> 
-	<script src="js/Chart.js"></script>
+	<!-- main section-->
+	<section id="home" class="header">
+		<div class="container">
+			<h1>Chu Shao</h1>
+			<h2>Software Engineer</h2>
+		</div>
+	</section>
 
+	<!-- About -->
+	<section id="about" class="section">
+		<div class="container">
+			<h2 class="section-title">About</h2>
+			<div class="section-content">
+				<p>I'm a Staff Software Engineer at Affirm.</p>
+				<p>I like food, corgis, and cars.</p>
+			</div>
+		</div>
+	</section>
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <![endif]-->
-  </head>
+	<!-- Experience -->
+	<section id="experience" class="section">
+		<div class="container">
+			<h2 class="section-title">Experience</h2>
+			<div class="section-content">
+				<div class="timeline">
+					
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Staff Software Engineer</h3>
+							<h4>Affirm</h4>
+							<span class="timeline-date">March 2021 - Current</span>
+							<p>Designed and implemented AdaptAI, a promotions platform that delivers personalized pricing promotions to users.</p>
+							<p>Manage roadmaps and work closely with product and cross functional teams in defining and prioritizing features.</p>
+							<p>Led discussions and created north star goals of pricing foundations for interfaces, scalability, and extensibility.</p>
+							<p>Architected the core pricing configuration bundle system that lead a performance boost of over 100x.</p>
+							<p>Built and launched dynamic experimentation of pricing configurations for all merchants.</p>
+							<p>Took over and completed a 4 year migration that moved merchant pricing off of a monolith and onto its own service. </p>
+							<p>Defined and decoupled key pricing domain RPC endpoints from other systems and created internal SLAs.</p>
+							
+						</div>
+					</div>
 
-  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Senior Staff Software Engineer</h3>							
+							<h4>Udemy</h4>
+							<span class="timeline-date">January 2015 - March 2021</span>
+							<p>Individual contributor on the growth engineering team supporting consumer marketing, pricing, and discounts.</p>
+							<p>Led discussions and worked with stakeholders on translating product requirements into technical design documents.</p>
+							<p>Architected a pricing engine to support dynamic price strategies for discount campaigns.</p>
+							<p>Mentored interns and lead design discussions in structuring a dynamic Google Adwords bid modifier platform.</p>
+							<p>Designed and implemented a fully integrated and scalable affiliate network framework for on-boarding affiliates.</p>
+							<p>Implemented a side project that scaled In App Purchases on iOS and Android from 500 courses to over 90,000 courses.</p>
+							<p>Collaborated with Consumer Marketing and Business Development teams in developing internal & external tooling.</p>
+							<p>Migrated legacy PHP and Javascript code to Django and Angular with over 95% test coverage.</p>
+						</div>
+					</div>
 
-  	<!-- Menu -->
-  	<nav class="menu" id="theMenu">
-  		<div class="menu-wrap">
-  			<h1 class="logo"><a href="#home" class="smoothScroll">Home</a></h1>
-  			<i class="icon-remove menu-close"></i>
-  			<a href="#about" class="smoothScroll">About</a>
-  			<a href="#experience" class="smoothScroll">Experience</a>
-  			<a href="#skills" class="smoothScroll">Skills</a>
-  			<a href="#projects" class="smoothScroll">Projects</a>
-  			<a href="#education" class="smoothScroll">Education</a>
-  			<a href="#publications" class="smoothScroll">Publications</a>
-  			<a href="#contact" class="smoothScroll">Contact</a>
-  			<a href="https://www.linkedin.com/in/chushao"><i class="icon-linkedin"></i></a>
-  			<a href="https://github.com/chushao"><i class="icon-github"></i></a>
-  			<a href="mailto:chu@cshao.me"><i class="icon-envelope"></i></a>
-                        <a href="https://www.mixcloud.com/Pikachuu"><i class="icon-music"></i></a>
-  		</div>
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Software Engineer</h3>
+							<h4>CBS Interactive</h4>
+							<span class="timeline-date">September 2013 - January 2015</span>
+							<p>Replatformed a popular CBS Interactive website onto a new internal content and audience management system. In addition, coded in various industry standard languages and software stacks, including symfony2, requirejs, jquery, php, twig, html5 and javascript. Also optimized solr search indexer and managed bug fixes.</p>
+							<p>West Coast PoC for managing deploys, fixing blockers and running data migrations. In addition, one of the main software engineers on the backend for ZDNet replatform and focusing on implementing a backend system that fits what ZDNet needs.</p>
+							
+						</div>
+					</div>
 
-  		<!-- Menu button -->
-  		<div id="menuToggle"><i class="icon-reorder"></i></div>
-  	</nav>
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Teaching Assistant</h3>
+							<h4>Georgia Institute of Technology</h4>
+							<span class="timeline-date">September 2013 - January 2015</span>
+							<p>TA For Education Technology, mentoring ∼20 students per semester in delivering a project that relates to EdTech. </p>
+							<p>Discussed and modified homework assignments to improve student readiness in reading publications and journals. </p>
+							<p>Facilitate growth of students in research and applications of research in projects.</p>
+							
+						</div>
+					</div>
 
-    <!-- main section-->
-  	<section id="home" name="home"></section>
-  	<div id="headerwrap">
-  		<div class="container">
-  			<div class="row centered">
-  				<div class="col-lg-12">
-  					<h1>Chu Shao</h1>
-  					<h3>Software Engineer | <a href="mailto:chu@cshao.me">chu@cshao.me</a></h3>
-  				</div><!--/.col-lg-12 -->
-  			</div><!--/.row -->
-  		</div><!--/.container -->
-  	</div><!--/.#headerwrap -->
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>CSE 8B Tutor</h3>
+							<h4>UCSD</h4>
+							<span class="timeline-date">April 2013 - June 2013</span>
+							<p>Tutored for CSE 8b: Introduction to Java programming class. Worked with students on providing help and comprehension on their programming assignments and graded problem solving assignments.</p>
+						</div>
+					</div>
 
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>CSE 3 Head Tutor</h3>
+							<h4>UCSD</h4>
+							<span class="timeline-date">January 2013 - March 2013</span>
+							<p>Head Tutor for CSE 3: Fluency in Information Technology. Worked with the professor in creating homework, grading labs, and lead other tutors in providing a comprehension of technology to non-technical students.</p>
+						</div>
+					</div>
 
-  	<section id="about" name="about"></section>
-  	<div id="intro">
-  		<div class="container">
-  			<div class="row">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Software Engineer - Intern</h3>
+							<h4>BlueHornet/Digital River</h4>
+							<span class="timeline-date">June 2012 - September 2012</span>
+							<p>Worked on adding a custom field for users to input through the BlueHornet mail service application. This internship provided an opportunity to go through one development cycle and implement a custom number field that will be used to send personalized data to millions of subscribers. This project mainly utilized Zend framework and in house php libaries.</p>
+						</div>
+					</div>
 
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>ABOUT</h5>
-  				</div>
-  				<div class="col-lg-6">
-  					<p>I'm a Senior Software Engineer at Udemy and on the side my interests are in Ubiquitous Computing and Internet of Things.</p>
-  				</div>
-  				<div class="col-lg-3" id="resume">
-  					<p ><a href="assets/Chu_Shao_Resume.pdf"><i class="icon-file"></i><sm>DOWNLOAD RESUME</sm></a> </p>
-  				</div>
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Systems and Network Support</h3>
+							<h4>Ocean Observatories Initiative</h4>
+							<span class="timeline-date">June 2011 - October 2013</span>
+							<p>Manage 5 different network-monitoring tools, modify and create bash scripts, and do various miscellaneous troubleshooting jobs such as setting up servers, installing virtual machines, write shell scripts, design visio charts, and technical support for staff members. Mainly devops support.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  			</div><!--/.row -->
-  		</div><!--/.container -->
-  	</div><!--/ #intro -->
+	<!-- Education -->
+	<section id="education" class="section">
+		<div class="container">
+			<h2 class="section-title">Education</h2>
+			<div class="section-content">
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Computer Science M.S.</h3>
+							<h4>Georgia Institute of Technology</h4>
+							<p>Graduated May 2019</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Computer Science B.S.</h3>
+							<h4>UC San Diego</h4>
+							<p>Graduated June 2014</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  	<section id="experience" name="experience"></section>
-  	<!--EXPERIENCE DESCRIPTION -->
-  	<div class="container desc">
-  		<div class="row">
-
-  			<div class="col-lg-2 col-lg-offset-1">
-  				<h5>WORK</h5>
-  			</div>
-  			<div class="col-lg-6">
-  				<p><t>Senior Software Engineer</t><br/>
-  					Udemy <br/>
-  				</p>
-  				<p>Senior Software Engineer on the Growth Engineering team. <br>
-          Work with our growth team and our web applications team to generate new features related to growth hacking.</p>
-                        </div>
-  			<div class="col-lg-3">
-  				<p><sm>JANUARY 2015 - CURRENT</sm></p>
-        </div>
-          <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Software Engineer</t><br/>
-            CBS Interactive <br/>
-          </p>
-          <p>Replatformed a popular CBS Interactive website onto a new internal content and audience management system. In addition, coded in various industry standard languages and software stacks, including symfony2, requirejs, jquery, php, twig, html5 and javascript. Also optimized solr search indexer and managed bug fixes.</p>
-                                <p>West Coast PoC for managing deploys, fixing blockers and running data migrations. In addition, one of the main software engineers on the backend for ZDNet replatform and focusing on implementing a backend system that fits what ZDNet needs.</p>
-                        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2013 - JANUARY 2015</sm></p>
-                                <p><sm>INTERN: <br> JUNE 2013 - SEPTEMBER 2013</sm></p>
-                        </div>
-      		<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>CSE 8B Tutor</t><br/>
-  					UCSD <br/>
-  				</p>
-  				<p>Tutored for CSE 8b: Introduction to Java programming class. Worked with students on providing help and comprehension on their programming assignments and graded problem solving assignments.</p>
-  			</div>
-  			<div class="col-lg-3">
-  				<p><sm>APRIL 2013 - JUNE 2013</sm></p>
-  			</div>
-
-  			<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>CSE 3 Head Tutor</t><br/>
-  					UCSD <br/>
-  				</p>
-  				<p>Head Tutor for CSE 3: Fluency in Information Technology. Worked with the professor in creating homework, grading labs, and lead other tutors in providing a comprehension of technology to non-technical students.</p>
-  			</div>
-  			<div class="col-lg-3">
-  				<p><sm>JANUARY 2013 - MARCH 2013</sm></p>
-  			</div>
-
-  			<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>Software Engineer - Intern</t><br/>
-  					BlueHornet/Digital River<br/>
-  				</p>
-  				<p>Worked on adding a custom field for users to input through the BlueHornet mail service application. This internship provided an opportunity to go through one development cycle and implement a custom number field that will be used to send personalized data to millions of subscribers. This project mainly utilized Zend framework and in house php libaries.</p>
-  			</div>
-  			<div class="col-lg-3">
-  				<p><sm>JUNE 2012 - SEPTEMBER 2012</sm></p>
-  			</div>
-
-  			<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>Systems and Network Support</t><br/>
-  					Ocean Observatories Initiative <br/>
-  				</p>
-  				<p>Manage 5 different network-monitoring tools, modify and create bash scripts, and do various miscellaneous troubleshooting jobs such as setting up servers, installing virtual machines, write shell scripts, design visio charts, and technical support for staff members. Mainly devops support.</p>
-  			</div>
-  			<div class="col-lg-3">
-  				<p><sm>JUNE 2011 - OCTOBER 2013</sm></p>
-  			</div>
-
-  		</div><!--/.row -->
-  		<br>
-  		<br>
-  	</div><!--/.container -->
-
-  	<!--SKILLS DESCRIPTION -->
-  	<section id="skills" name="skills"></section>
-  	<div id="skillswrap">
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-lg-2 col-lg-offset-1">
-  					<h5>SKILLS</h5>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><b>Programming Languages</b><br>
-  						Python<br>
-  						Javascript/Coffeescript<br>
-  						PHP<br>
-  						Ruby<br>
-  						Java<br>
-  						C<br>
-  						C++<br>
-  						MATLAB<br>
-  						Shell Script<br>
-  						SPARC Assembly<br>
-  						Ocaml<br>
-  						Scala<br>
-  						Go<br>
-  						SystemsVerilog
-  					</p>
-  				</div>
-
-  				<div class="col-lg-3">
-  					<p><b>Web Frameworks</b><br>
-  						Symfony<br>
-  						Node.js<br>
-  						RequireJS<br>
-  						Express<br>
-  						JQuery<br>
-  						Flask<br>
-  						Django<br>
-  						Zend Framework <br>
-  						Sinatra<br>
-  						Ruby on Rails
-  					</p>
-  					<p><b>SQL</b><br>
-  						MySQL<br>
-  						Oracle Database 11g<br>
-  						PostgreSQL <br>
-              MongoDB<br>
-  						CouchDB
-  					</p>
-  				</div>					
-  			</div><!--/.row -->
-  			<br>
-  		</div><!--/.container -->
-  	</div><!--/ #skillswrap -->
+	<!-- Publications -->
+	<section id="publications" class="section">
+		<div class="container">
+			<h2 class="section-title">Publications</h2>
+			<div class="section-content">
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h3>Chroma: A Wearable Augmented-Reality Solution for Color-Blindness</h3>
+							<p>Enrico Tanuwidjaja, Derek Huynh, Kirsten Koa, Calvin Nguyen, Chu Shao, Patrick Torbett, Colleen Emmenegger, and Nadir Weibel. Chroma: A Wearable Augmented-Reality Solution for Color-Blindness. In Proceedings of Ubicomp 2014, ACM International Joint Conference on Pervasive and Ubiquitous Computing, (UbiComp '14 Adjunct) ACM, New York, NY, USA, 799-810.</p>
+							<div class="project-links">
+								<a href="assets/Chroma.pdf">Download Paper</a>
+								<a href="http://dl.acm.org/citation.cfm?id=2632091">ACM Citations Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-  	<section id="projects" name="projects"></section>
-  	<!--PROJECT DESCRIPTION -->
-  	<div class="container desc">
-  		<div class="row">
+	<!-- Contact -->
+	<section id="contact" class="section">
+		<div class="container">
+			<h2 class="section-title">Contact</h2>
+			<div class="section-content">
+				<div class="contact-info">
+					<p><i class="fas fa-envelope"></i> <a href="mailto:chu@cshao.me">chu@cshao.me</a></p>
+					<div class="social-links">
+						<a href="https://www.linkedin.com/in/chushao" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/chushao" aria-label="GitHub"><i class="fab fa-github"></i></a>
+						<a href="https://www.mixcloud.com/Pikachuu" aria-label="Mixcloud"><i class="fas fa-music"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  			<div class="col-lg-2 col-lg-offset-1">
-  				<h5>PROJECTS</h5>
-  			</div>
-
-        <div class="col-lg-6">
-          <p><t>Balancr</t><br/>
-            Human Computer Interaction Project: CSE 170 <br/>
-          </p>
-          <p>Project class focused on gathering data on user needs and creating an application that fits the needs through concepts of usability engineering and human computer interaction. Designed an iPhone based web application that allows users to insert details about their lifestyles and generate graphs based on the desired details. 
-            <br><a href="http://balancr.herokuapp.com">http://balancr.herokuapp.com</a>
-            <br><a href="assets/Balancr.png">Poster</a>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JANUARY 2014 - MARCH 2014</sm></p>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Chroma</t><br/>
-            Google Glass Project<br/>
-          </p>
-          <p> Chroma, a wearable augmented-reality system based on Google Glass that allows users to see a filtered image of the current scene in real-time. Chroma automatically adapts the scene-view based on the type of color blindness, and features dedicated algorithms for color saliency. 
-          <p>Check below for more information </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JANUARY 2014 - MARCH 2014</sm></p>
-        </div>
-
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>TimeWastr</t><br/>
-            Android/Web Server Interface project<br/>
-          </p>
-          <p>TimeWastr is an application that grabs articles from websites, calculates the words of each article and allow users to read the articles at an average wpm pace by the time they desire. This application utilizes a Node.js backend that communicates completely through API calls to a front end Android Application.
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>JANUARY 2014 - MARCH 2014</sm></p>
-        </div>
-
-        <div class="col-lg-6 col-lg-offset-3">
-          <p><t>Vendos</t><br/>
-            Kinect/Arduino Project<br/>
-          </p>
-          <p>Vendos is an home automation project designed to interface Kinect with an Arduino, and allows the user to control home appliances through movements and voice commands. This project focuses on creating a Ubiquitous home environment on the budget and allows users to have a DIY project that can control appliances.
-            <br><a href="assets/Vendos_research_paper.pdf">Research Paper</a></p>
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <p><sm>SEPTEMBER 2013 - DECEMBER 2013</sm></p>
-        </div>
-
-  			<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>Humanitarian Engineering Project</t><br/>
-  					We Have We Need <br/>
-  				</p>
-  				<p>Project class focused on creating an inventory-sharing system that allows improved coordination between non-governmental organizations operating in disaster areas. We Have We Need is a web application written in python in which it allows users to manage their inventory and communicate with others on receiving and giving necessities during a crisis.
-  					<br><a href="http://www.wehave-weneed.org">http://www.wehave-weneed.org</a>
-  				</p>
-  			</div>
-  			<div class="col-lg-3">
-  				<p><sm>JANUARY 2013 - DECEMBER 2013</sm></p>
-  			</div>
-
-  			<div class="col-lg-6 col-lg-offset-3">
-  				<p><t>IRC Chat Server</t><br/>
-  					Independent Study: Concurrent Programming with Go<br/>
-  				</p>
-  				<p>Independent study class focused on learning Golang, a concurrent programming language. This project partially implements the rfc-1459 standards of an irc server, in which clients can connect to it and chat. This project focused mainly on concurrency and managing goroutines. <br>
-  					<a href="assets/CSE199.pdf">Summary Slide</a></p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>APRIL 2013 - JUNE 2013</sm></p>
-  				</div>
-
-  				<div class="col-lg-6 col-lg-offset-3">
-  					<p><t>Reduced-C Compiler</t><br/>
-  						Compiler Construction: CSE 131 <br/>
-  					</p>
-  					<p>Project class in which we built parser that does syntactic and symantic analysis on Reduced-C code. Then we built a code generator that translates correctly inputted code to SPARC assembly. Reduced-C is light version of C++ and includes almost every feature supported, including classes, pointers, structs and arrays. </p>
-  				</div>
-  				<div class="col-lg-3">
-  					<p><sm>APRIL 2013 - JUNE 2013</sm></p>
-  				</div>
-
-  				<div class="col-lg-6 col-lg-offset-3">
-  					<p><t>GradeSource Uploader</t><br/>
-  					</p>
-  					<p>Self-motivated project in which I help the cse department create tools for easier access of a grading system. Currently working on a python backend of easing uploads to gradesource, an online course management system. Written as a way to simplify uploading grades, as it allows users to grab names, emails, pid into csv forms and allow csv uploads for grades. In addition, wrote a ruby/sinatra based gui webapp as a wrapper for this backend<br>
-  						<a href="https://github.com/chushao/Gradesource-Uploader">Github repo</a>
-  						<br>
-  						<a href="https://github.com/chushao/Gradesource-Uploader---GUI">Github repo for gui wrapper</a></p>
-  					</div>
-  					<div class="col-lg-3">
-  						<p><sm>DECEMBER 2012 - MARCH 2013</sm></p>
-  					</div>
-
-  					<div class="col-lg-6 col-lg-offset-3">
-  						<p><t>Crossfit Workout Web Application</t><br/>
-  							Software Engineering Project: CSE 110 <br/>
-  						</p>
-  						<p>Project class focused on building a web application that utilizes agile development in thought process and creation. we utilized ruby on rails web framework and provided an application that allows crossfit users to keep track of their workout statistics. 
-  							<br>
-  							<a href="https://github.com/chushao/HERP-urban-crossfitters">Github repo</a></p>
-  						</div>
-  						<div class="col-lg-3">
-  							<p><sm>APRIL 2012 - JUNE 2012</sm></p>
-  						</div>
-
-  						<div class="col-lg-6 col-lg-offset-3">
-  							<p><t>FPGA Edge Detection using AutoESL</t><br/>
-  								Embedded Systems Project: CSE 145 <br/>
-  							</p>
-  							<p>Project class focused on building an embedded computing system. our project was to build a better traffic analyzer utilizing video and sensor input on a Xilinx Spartan 6 FPGA. Our goal was to achieve real time motion tracking using edge detection.</p>
-  						</div>
-  						<div class="col-lg-3">
-  							<p><sm>JANUARY 2012 - MARCH 2012</sm></p>
-  						</div>
-
-  					</div><!--/.row -->
-  					<br>
-  					<br>
-  				</div><!--/.container -->
-
-
-
-
-  				<section id="education" name="education"></section>
-  				<!--EDUCATION DESCRIPTION -->
-  				<div id="skillswrap">
-  					<div class="container">
-  						<div class="row">
-
-  							<div class="col-lg-2 col-lg-offset-1">
-  								<h5>EDUCATION</h5>
-  							</div>
-  							<div class="col-lg-6">
-  								<p><t>Computer Science B.S.</t><br/>
-  									UC San Diego
-  								</p>
-
-  								<b>Related Coursework</b>
-  									<p>
-  										Fluency in Information Technology<br>
-  										Introduction to Programming with MATLAB<br>
-  										Introduction to Computer Science and Object-Oriented Programming: Java<br>
-  										Basic Data Structures and Object-Oriented Design<br>
-  										Discrete Mathematics<br>
-  										Computer Organization and Systems Programming<br>
-  										Advanced Data Structures<br>
-  										Design and Analysis of Algorithms<br>
-  										Probability and Statistics<br>
-  										Theory of Computability<br>
-  										Software Engineering<br>
-  										Principles of Computer Operating Ssystems<br>
-  										Programming Languages: Principles and Paradigms<br>
-  										Compiler Construction<br>
-  										Global TIES: Team Engineering<br>
-  										Embedded System Design Project<br>
-  										Independent Study: Concurrent Programming with GO <br>
-  										MATLAB for Experimental Research<br>
-  										Ubiquitous Computing<br>
-  										Components and Design Techniques for Digital Systems<br>
-  										Introduction to Computer Architecture<br>
-  										Computer Architecture Project<br>
-  										Introduction to HCI Design<br>
-  										Mobile Programming<br>
-  										Directed Group Study: Google Glass and Chroma
-  									</p>
-  							
-  							</div>
-  							<div class="col-lg-3">
-  								<p><sm>GRADUATED JUNE 2014</sm><br/>
-  								</p>
-  							</div>
-
-  						</div><!--/.row -->
-  						<br>
-  						
-  					</div>
-  				</div><!--/.container -->
-
-
-  				<section id="publications" name="publications"></section>
-  				<!--AWARDS DESCRIPTION -->
-  				<div class="container desc">
-  					<div class="row">
-  						<div class="col-lg-2 col-lg-offset-1">
-  							<h5>Publications</h5>
-  						</div>
-  						<div class="col-lg-6">
-                                                    <p><t>Chroma: A Wearable Augmented-Reality Solution for Color-Blindness.</t><br/>
-                                                    <sm> Enrico Tanuwidjaja, Derek Huynh, Kirsten Koa, Calvin Nguyen, <b>Churen Shao</b>, Patrick Torbett, Colleen Emmenegger, and
-                                                    Nadir Weibel. Chroma: A Wearable Augmented-Reality Solution for Color-Blindness. In <i>Proceedings of Ubicomp 2014, ACM
-                                                            International Joint Conference on Pervasive and Ubiquitous Computing,</i> (UbiComp '14 Adjunct) ACM, New York, NY, USA, 799-810.
-                                                        </sm>
-                                                        </p>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                        <p><a href="assets/Chroma.pdf"> Download Our Paper </a></p>
-                                                        <p><a href="http://dl.acm.org/citation.cfm?id=2632091">ACM Citations Link </a> </p>
-  						</div>
-  					</div><!--/.row -->
-  					<br>
-  				</div><!--/.container -->
-
-
-
-  				<section id="contact" name="contact"></section>
-  				<!--FOOTER DESCRIPTION -->
-  				<div id="footwrap">
-  					<div class="container">
-  						<div class="row">
-
-  							<div class="col-lg-2 col-lg-offset-1">
-  								<h5>CONTACT</h5>
-  							</div>
-  							<div class="col-lg-6">
-  								<p><t>Email</t><br/>
-  									chu@cshao.me <br/>
-  								</p>
-  							</div>
-  							<div class="col-lg-3">
-  								<p><t>LINKS</t></br>
-  									<a href="https://www.github.com/chushao">Github</a><br>
-  									<a href="http://www.linkedin.com/in/chushao">Linkedin</a><br>
-  								</p>
-  							</div>
-  						</div><!--/.row -->
-  					</div><!--/.container -->
-  				</div><!--/ #footer -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/main.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50519675-1', 'cshao.me');
-  ga('send', 'pageview');
-
-</script>
-    </body>
+	<script src="js/main.js"></script>
+</body>
 </html>
